@@ -1,5 +1,5 @@
 {
-    "name": "descom/package_slug",
+    "name": "descom/skeleton",
     "description": "Template to generate a Laravel Package",
     "license": "MIT",
     "authors": [
