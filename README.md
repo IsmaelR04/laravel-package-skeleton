@@ -6,8 +6,8 @@ your Custom NameSpace.
 sample:
 
 ```bash
-find {src,tests,database,config,composer.json} -type f -exec sed -I '' 's/Skeleton/CustomPackage/g' {} \;
-find {src,tests,database,config,composer.json} -type f -exec sed -I '' 's/skeleton/custom_package/g' {} \;
+find {src,tests,database,config,stubs,composer.json} -type f -exec sed -I '' 's/Skeleton/CustomPackage/g' {} \;
+find {src,tests,database,config.stubs,composer.json} -type f -exec sed -I '' 's/skeleton/custom_package/g' {} \;
 mv src/SkeletonServiceProvider.php src/CustomPackageServiceProvider.php
 composer dump
 ./vendor/bin/phpunit
