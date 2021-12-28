@@ -29,6 +29,7 @@ jobs:
       run: |
           sudo apt-get update
           sudo apt-get install sqlite3
+
     - name: Validate composer.json and composer.lock
       run: composer validate
 
@@ -49,6 +50,3 @@ jobs:
 
     - name: Run test phpunit
       run: vendor/bin/phpunit
-
-    - name: Run analyse phpstan
-      run: vendor/bin/phpstan analyse src tests --error-format github
