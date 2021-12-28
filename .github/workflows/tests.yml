@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  testing:
+  phpunit:
 
     runs-on: ubuntu-latest
 
@@ -49,6 +49,21 @@ jobs:
 
     - name: Run test phpunit
       run: vendor/bin/phpunit
+
+    - name: Run analyse phpstan
+      run: vendor/bin/phpstan analyse src tests --error-format github
+
+  phpstan:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 8.1
 
     - name: Run analyse phpstan
       run: vendor/bin/phpstan analyse src tests --error-format github
