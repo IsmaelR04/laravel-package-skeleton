@@ -41,4 +41,4 @@ jobs:
         composer dump
 
     - name: Run style
-      run: vendor/bin/php-cs-fixer fix --dry-run --diff
+      run: vendor/bin/php-cs-fixer fix --dry-run --diff --format junit
