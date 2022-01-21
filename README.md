@@ -1,5 +1,9 @@
 # Laravel Package Skeleton
 
+[![tests](https://github.com/descom-es/laravel-package-skeleton/actions/workflows/tests.yml/badge.svg)](https://github.com/descom-es/laravel-package-skeleton/actions/workflows/tests.yml)
+[![analyse](https://github.com/descom-es/laravel-package-skeleton/actions/workflows/analyse.yml/badge.svg)](https://github.com/descom-es/laravel-package-skeleton/actions/workflows/analyse.yml)
+[![style](https://github.com/descom-es/laravel-package-skeleton/actions/workflows/style.yml/badge.svg)](https://github.com/descom-es/laravel-package-skeleton/actions/workflows/style.yml)
+
 After clone this package, you can replace in all files content `Skeleton` with
 your Custom NameSpace.
 
