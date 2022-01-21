@@ -34,10 +34,10 @@ class InstallTest extends TestCase
 
         // We expect a warning that our configuration file exists
         $command->expectsConfirmation(
-        'Config file already exists. Do you want to overwrite it?',
+            'Config file already exists. Do you want to overwrite it?',
         // When answered with "no"
         'no'
-    );
+        );
 
         // We should see a message that our file was not overwritten
         $command->expectsOutput('Existing configuration was not overwritten');
@@ -61,10 +61,10 @@ class InstallTest extends TestCase
 
         // We expect a warning that our configuration file exists
         $command->expectsConfirmation(
-        'Config file already exists. Do you want to overwrite it?',
+            'Config file already exists. Do you want to overwrite it?',
         // When answered with "yes"
         'yes'
-    );
+        );
 
         // execute the command to force override
         $command->execute();
@@ -73,9 +73,9 @@ class InstallTest extends TestCase
 
         // Assert that the original contents are overwritten
         $this->assertEquals(
-        file_get_contents(__DIR__.'/../../config/config.php'),
-        file_get_contents(config_path('skeleton.php'))
-    );
+            file_get_contents(__DIR__.'/../../config/config.php'),
+            file_get_contents(config_path('skeleton.php'))
+        );
 
         // Clean up
         unlink(config_path('skeleton.php'));

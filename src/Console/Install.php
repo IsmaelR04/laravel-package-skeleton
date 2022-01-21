@@ -17,7 +17,7 @@ class Install extends Command
 
         $this->info('Publishing configuration...');
 
-        if (!$this->configExists('skeleton.php')) {
+        if (! $this->configExists('skeleton.php')) {
             $this->publishConfiguration();
         } else {
             if ($this->shouldOverwriteConfig()) {
