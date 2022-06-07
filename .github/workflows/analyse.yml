@@ -35,4 +35,4 @@ jobs:
         composer dump
 
     - name: Run analyse phpstan
-      run: vendor/bin/phpstan analyse src tests --error-format github
+      run: vendor/bin/phpstan analyse --error-format github
