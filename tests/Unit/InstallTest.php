@@ -35,8 +35,8 @@ class InstallTest extends TestCase
         // We expect a warning that our configuration file exists
         $command->expectsConfirmation(
             'Config file already exists. Do you want to overwrite it?',
-        // When answered with "no"
-        'no'
+            // When answered with "no"
+            'no'
         );
 
         // We should see a message that our file was not overwritten
@@ -62,8 +62,8 @@ class InstallTest extends TestCase
         // We expect a warning that our configuration file exists
         $command->expectsConfirmation(
             'Config file already exists. Do you want to overwrite it?',
-        // When answered with "yes"
-        'yes'
+            // When answered with "yes"
+            'yes'
         );
 
         // execute the command to force override
