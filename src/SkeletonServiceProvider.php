@@ -2,7 +2,6 @@
 
 namespace Descom\Skeleton;
 
-use Descom\Skeleton\Console\Install;
 use Illuminate\Support\ServiceProvider;
 
 class SkeletonServiceProvider extends ServiceProvider
@@ -18,10 +17,6 @@ class SkeletonServiceProvider extends ServiceProvider
             $this->publishes([
               __DIR__.'/../config/config.php' => config_path('skeleton.php'),
             ], 'config');
-
-            $this->commands([
-                Install::class,
-            ]);
         }
     }
 }
