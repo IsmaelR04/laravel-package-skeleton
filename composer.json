@@ -14,7 +14,7 @@
         "laravel/framework": "^9.0|^10.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.4",
+        "descom/dev": "^1.0",
         "nunomaduro/larastan": "^2.0",
         "orchestra/testbench": "^7.5|^8.0",
         "phpstan/phpstan": "^1.2",
