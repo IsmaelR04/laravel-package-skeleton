@@ -9,6 +9,6 @@ class ExampleTest extends TestCase
     public function testExample()
     {
         $true = 1;
-        $this->assertTrue(!!$true);
+        $this->assertTrue(! ! $true);
     }
 }
