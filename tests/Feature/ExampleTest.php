@@ -8,7 +8,7 @@ class ExampleTest extends TestCase
 {
     public function testExample()
     {
-        $true = true;
-        $this->assertTrue($true);
+        $true = 1;
+        $this->assertTrue(!!$true);
     }
 }
